@@ -1,79 +1,75 @@
 # 📊 Analyzing Agricultural Productivity Across Indian States - Power BI Dashboard
 
 ## 🧭 Project Overview
-
-This Power BI project provides a **data-driven visualization and analysis of agricultural productivity** across Indian states. It leverages key agronomic and environmental factors such as rainfall, fertilizer usage, and cropping patterns to uncover productivity trends and support effective agricultural planning and policy-making.
+This Power BI project offers a comprehensive visualization and analysis of agricultural productivity across Indian states. The dashboard uses variables such as rainfall, fertilizer usage, pesticide application, and cultivation area to identify productivity patterns and uncover actionable insights that support better agricultural decision-making.
 
 ## 🔍 Objectives
-
-- Visualize **state-wise agricultural performance** for various crops and years.
-- Analyze the **impact of rainfall, fertilizers, and pesticide usage** on crop productivity.
-- Identify **seasonal trends and regional disparities** in crop cultivation.
-- Enable **interactive exploration** of crop yield and related factors through dashboards.
+- Visualize agricultural performance metrics across Indian states.
+- Analyze the influence of rainfall, fertilizer, and pesticide usage on crop production and yield.
+- Understand seasonal trends and regional disparities.
+- Enable dynamic and interactive exploration through intuitive slicers and filters.
 
 ## 📂 Dataset Description
-
-Each record in the dataset represents a unique crop grown in a particular season, state, and year, along with relevant agronomic and environmental data.
+The dataset provided in CSV format includes details on crop production, area, rainfall, fertilizer and pesticide usage, and yield. Each record represents a crop-season-state-year combination with its corresponding metrics.
 
 ### 🧾 Column Descriptions
 
-| Column Name       | Description                                                                    |
-| ----------------- | ------------------------------------------------------------------------------ |
-| `Crop`            | The name of the crop cultivated (e.g., Rice, Wheat, Maize).                    |
-| `Crop_Year`       | The year in which the crop was grown.                                          |
-| `Season`          | The specific cropping season (e.g., Kharif, Rabi, Whole Year).                 |
-| `State`           | The Indian state where the crop was cultivated.                                |
-| `Area`            | The total land area (in hectares) under cultivation.                           |
-| `Production`      | The quantity of crop production (in metric tons).                              |
-| `Annual_Rainfall` | The annual rainfall received in the crop-growing region (in millimeters).      |
-| `Fertilizer`      | The total amount of fertilizer used (in kilograms).                            |
-| `Pesticide`       | The total amount of pesticide used (in kilograms).                             |
-| `Yield`           | The calculated crop yield (Production ÷ Area), i.e., productivity per hectare. |
-
+| Column Name       | Description |
+|------------------|-------------|
+| `Crop`           | Name of the crop (e.g., Rice, Wheat, Maize) |
+| `Crop_Year`      | Year of cultivation |
+| `Season`         | Cropping season (e.g., Kharif, Rabi, Whole Year) |
+| `State`          | Indian state where the crop is cultivated |
+| `Area`           | Area under cultivation (in hectares) |
+| `Production`     | Crop production output (in metric tons) |
+| `Annual_Rainfall`| Annual rainfall received (in mm) |
+| `Fertilizer`     | Fertilizer used (in kg) |
+| `Pesticide`      | Pesticide used (in kg) |
+| `Yield`          | Productivity per hectare (Production ÷ Area) |
 
 ## 🛠️ Tools & Technologies Used
+- **Power BI Desktop** – Dashboard creation and report development
+- **Power Query Editor** – Data transformation and modeling
+- **DAX (Data Analysis Expressions)** – Custom measures and KPIs
+- **Microsoft Excel** – Dataset validation and basic preprocessing
 
-- **Power BI Desktop** – for data modeling and dashboard creation
-- **Power Query Editor** – for data cleaning and transformation
-- **DAX (Data Analysis Expressions)** – for calculated fields and custom metrics
-- **Microsoft Excel** – for initial dataset formatting and validation
+## 📈 Dashboard Structure
 
-## 📈 Dashboard Features
+### 1. **Overview Page**
+- Cards for key metrics: Avg Rainfall, Area, Fertilizer, and Pesticide
+- Stacked bar chart: Average Production by State
+- Stacked column chart: Average Yield by State
 
-- 🗺️ **State-wise Crop Yield Map**: View geospatial distribution of yield across states.
-- 📅 **Seasonal Trends**: Track how crop yield and inputs vary across Kharif, Rabi, and Whole Year.
-- 🌧️ **Rainfall vs Yield Correlation**: Understand how rainfall impacts productivity.
-- 🧪 **Fertilizer and Pesticide Impact Analysis**: See input-output efficiency across crops.
-- 📊 **Crop-Wise Productivity Trends**: Compare productivity for different crops over the years.
-- 🔍 **Interactive Filters**: Slice data by State, Crop, Year, Season, and more.
+### 2. **Crop Production Page**
+- Line charts: Relationship between Rainfall and Production
+- Slicers for Crop and State to enable comparative trend analysis
+
+### 3. **Fertilizer Page**
+- Pie chart: Fertilizer usage by State
+- Donut chart: Fertilizer usage by Crop
+- Key Influencers visual: Factors impacting productivity
+- Table: Season-wise, crop-wise detailed data
+
+## 🧠 Key Insights (Examples)
+- Rainfall and pesticide usage significantly influence crop yield.
+- Northern states report higher wheat productivity during Rabi.
+- Fertilizer usage does not always correlate with higher yields—highlighting inefficiencies.
 
 ## 🚀 Getting Started
+1. Clone or download the repository.
+2. Open the `.pbix` file in Power BI Desktop.
+3. Use interactive visuals and filters to explore the data and discover insights.
 
-1. Clone or download this repository.
-2. Open the `.pbix` file using Power BI Desktop.
-3. Explore the visualizations using the built-in slicers and filters.
-4. Analyze data interactively to discover insights.
-
-## 🧠 Key Insights (Example)
-
-- Wheat shows higher productivity in northern states during Rabi.
-- States with consistent rainfall and moderate pesticide usage report better average yields.
-- Fertilizer use doesn’t always correlate with high productivity – pointing toward optimization needs.
-
-## 📌 Possible Enhancements
-
-- Integrate **real-time weather API data** for forecasting.
-- Add **district-level data granularity**.
-- Implement **predictive analytics** to estimate future crop yields.
-- Publish the report to Power BI Service for web access and sharing.
+## 📌 Future Enhancements
+- Integrate real-time weather data through APIs.
+- Add drill-down to district-level granularity.
+- Implement forecasting features for crop production.
+- Publish and share insights via Power BI Service.
 
 ## 🤝 Contributing
-
-Want to improve the report or add new datasets?\
+Got ideas to improve the dashboard?  
 Feel free to fork the repo, raise a pull request, or suggest enhancements via Issues!
 
 ## 📬 Contact
-
-📧 Rohan Y S\
-[rohankulal04@gmail.com](mailto\:rohankulal04@gmail.com)
-
+**Rohan Y S**  
+📧 rohankulal04@gmail.com  
